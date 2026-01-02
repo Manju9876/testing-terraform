@@ -1,5 +1,3 @@
-bucket = "terraform-b83"
-key    = "env-dev/state"
-region = "us-east-1"
-
-
+bucket       = "terraform-demo-2025"
+key          = "env-dev/state"
+region       = "us-east-1"
