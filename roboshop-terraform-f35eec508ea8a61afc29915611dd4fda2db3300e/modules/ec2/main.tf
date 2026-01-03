@@ -40,8 +40,8 @@ resource "null_resource" "catalogue" {
     inline = [
       # "sudo pip3.11 install ansible hvac",
       # "ansible-pull -i localhost, -U https://github.com/Manju9876/roboshop-ansible-2025 roboshop.yaml -e component_name=${var.ansible_role} -e env=${var.env} -e vault_token=${var.vault_token}",
-
-      "sudo python3.12 pip install ansible hvac",
+      "sudo dnf install -y python3.12 python3.12-pip",
+      "sudo python3.12 -m pip install ansible hvac",
       "ansible-pull -i localhost, -U https://github.com/Manju9876/roboshop-ansible-2025 roboshop.yaml -e component_name=${var.tag_name} -e env=${var.env} -e vault_token=${var.vault_token}"
     ]
   }
