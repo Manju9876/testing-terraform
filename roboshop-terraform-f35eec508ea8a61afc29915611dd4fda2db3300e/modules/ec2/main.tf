@@ -31,7 +31,7 @@ resource "null_resource" "catalogue" {
   provisioner "remote-exec" {
 
     connection {
-      type     = "ssh"
+#      type     = "ssh"
       user     = data.vault_generic_secret.ssh.data["username"]
       password = data.vault_generic_secret.ssh.data["password"]
       host     = aws_instance.instance.private_ip
