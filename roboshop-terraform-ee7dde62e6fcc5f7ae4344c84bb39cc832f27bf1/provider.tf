@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 provider "vault" {
-  address = "http://vault-internal.devopsbymanju.shop:8200"
+  address = "http://vault-internal.devopsmanju.shop:8200"
   token   = var.vault_token
 }
 
